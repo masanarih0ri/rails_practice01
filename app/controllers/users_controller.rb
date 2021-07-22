@@ -3,6 +3,8 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
+    # Userというモデルクラスから全てのユーザーを取り出し、インスタンス変数に入れる
+    # モデルがデータベースとのやりとりをするのがわかる一例
     @users = User.all
   end
 
